@@ -1,0 +1,423 @@
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent; }
+
+body {
+  line-height: 1; }
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+nav ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+a {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent; }
+
+/* change colours to suit your needs */
+ins {
+  background-color: #ff9;
+  color: #000;
+  text-decoration: none; }
+
+/* change colours to suit your needs */
+mark {
+  background-color: #ff9;
+  color: #000;
+  font-style: italic;
+  font-weight: bold; }
+
+del {
+  text-decoration: line-through; }
+
+abbr[title], dfn[title] {
+  border-bottom: 1px dotted;
+  cursor: help; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/* change border colour to suit your needs */
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #cccccc;
+  margin: 1em 0;
+  padding: 0; }
+
+/* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS. */
+html {
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%; }
+
+/* apply a natural box layout model to all elements */
+* {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+/* -----------------------BODY ------------------------------- */
+header, nav, main, footer {
+  max-width: 71rem;
+  font-family: "lato"; }
+
+body {
+  font-family: "Lato", sans-serif;
+  font-weight: 300;
+  font-size: 16px; }
+
+.temporary {
+  clear: both;
+  width: 100%;
+  text-align: center;
+  padding: 7px 0px;
+  background-color: #1B75BC;
+  color: white; }
+
+/* ------------------------Header----------------------------- */
+div#wrapperHeader {
+  background-color: white;
+  height: 75px;
+  box-shadow: 2px 2px 10px 0px #666666;
+  z-index: -2;
+  border: 1px solid white; }
+
+header {
+  height: 75px;
+  background-color: white;
+  border: 1px solid white; }
+  header .logoImage {
+    margin-bottom: 0px;
+    clear: both; }
+  header .profileImage {
+    clear: both;
+    color: #1B75BC;
+    z-index: 5;
+    float: right;
+    margin-right: 20px; }
+    header .profileImage .material-icons.md-48 {
+      font-size: 36px;
+      text-align: right; }
+    header .profileImage a:visited, header .profileImage a:active {
+      color: #1B75BC; }
+    header .profileImage a:hover {
+      color: #A60332;
+      text-decoration: none; }
+
+/* ------------------------MAIN----------------------------- */
+main {
+  display: grid;
+  /* Fixed sidenav, full height */
+  /* Style the sidenav links and the dropdown button */
+  /* On mouse-over */
+  /* Add an active class to the active dropdown button */
+  /* Dropdown container (hidden by default). Optional: add a lighter background color and some left padding to change the design of the dropdown content */
+  /* Optional: Style the caret down icon */
+  /* Fixed sidenav, full height */
+  /* Style the sidenav links and the dropdown button */
+  /* On mouse-over */
+  /* Add an active class to the active dropdown button */
+  /* Dropdown container (hidden by default). Optional: add a lighter background color and some left padding to change the design of the dropdown content */
+  /* Optional: Style the caret down icon */
+  /*----------------Column Layout -------------*/ }
+  main .pageName {
+    clear: both;
+    text-align: left;
+    font-size: 24px;
+    color: #1B75BC;
+    padding: 15px 5px 15px 5px; }
+  main .sidenav1 {
+    background-color: #666666;
+    overflow-x: hidden;
+    height: 910px;
+    border: 1px solid #1B75BC;
+    opacity: .5; }
+  main .sidenav1 a, main .dropdown-btn {
+    padding: 8px 6px 16px;
+    text-decoration: none;
+    font-size: 14px;
+    color: white;
+    display: block;
+    border: none;
+    background: none;
+    width: 50%;
+    text-align: center;
+    cursor: pointer;
+    outline: none; }
+  main .sidenav1 a:hover, main .dropdown-btn:hover {
+    color: #1B75BC;
+    opacity: 1; }
+  main .active {
+    background-color: green;
+    color: white; }
+  main .dropdown-container {
+    display: none;
+    background-color: #262626;
+    padding-left: 8px; }
+  main .fa-caret-down {
+    float: right;
+    padding-right: 8px; }
+  main .sidenav2 {
+    background-color: #666666;
+    overflow-x: hidden;
+    height: 910px;
+    border: 1px solid #1B75BC;
+    opacity: .5; }
+  main .sidenav {
+    background-color: white;
+    overflow-x: hidden;
+    padding-top: 20px;
+    position: absolute;
+    width: 150px;
+    height: 849px;
+    margin-top: 10px;
+    border: 1px solid white; }
+  main .sidenav a, main .dropdown-btn {
+    padding: 8px 6px 16px;
+    text-decoration: none;
+    font-size: 20px;
+    color: #666666;
+    display: block;
+    border: none;
+    background: none;
+    width: 100%;
+    text-align: left;
+    cursor: pointer;
+    outline: none; }
+  main .sidenav a:hover, main .dropdown-btn:hover {
+    color: #1B75BC; }
+  main .active {
+    background-color: white;
+    color: #666666; }
+  main .dropdown-container {
+    display: none;
+    background-color: white;
+    padding-left: 8px; }
+  main .fa-caret-down {
+    float: right;
+    padding-right: 8px; }
+  main iframe {
+    display: none;
+    width: 250%;
+    height: 100%;
+    margin-left: 200px;
+    margin-top: 10px; }
+  main .explanation-0 {
+    color: black;
+    font-size: 24px;
+    margin-top: 50px;
+    margin-bottom: 30px;
+    text-decoration: underline;
+    text-align: right; }
+  main .explanation-1 {
+    color: black;
+    font-size: 24px;
+    margin-top: 60px;
+    margin-bottom: 30px; }
+  main .explanation-2 {
+    color: black;
+    font-size: 24px; }
+  main .column {
+    -webkit-column-gap: normal;
+    /* Chrome, Safari, Opera */
+    -moz-column-gap: normal;
+    /* Firefox */ }
+  main .small-1 {
+    width: 8.3333333333%;
+    float: left; }
+  main .small-2 {
+    width: 16.6666666667%;
+    float: left; }
+  main .small-3 {
+    width: 25%;
+    float: left; }
+  main .small-4 {
+    width: 33.3333333333%;
+    float: left; }
+  main .small-5 {
+    width: 41.6666666667%;
+    float: left; }
+  main .small-6 {
+    width: 50%;
+    float: left; }
+  main .small-7 {
+    width: 58.3333333333%;
+    float: left; }
+  main .small-8 {
+    width: 66.6666666667%;
+    float: left; }
+  main .small-9 {
+    width: 75%;
+    float: left; }
+  main .small-10 {
+    width: 83.3333333333%;
+    float: left; }
+  main .small-11 {
+    width: 91.6666666667%;
+    float: left; }
+  main .small-12 {
+    width: 100%;
+    float: left; }
+
+/* ------------------------FOOTER----------------------------- */
+div#wrapperFooter {
+  background-color: white;
+  z-index: 999;
+  box-shadow: 2px 2px 10px 0px #666666;
+  height: 75px;
+  margin-top: 15px; }
+
+footer {
+  background-color: white;
+  height: 75px;
+  margin-top: 15px;
+  /*    
+     
+  div.apple { grid-row: 1; grid-column: 1; align-self: start; } 
+  div.pear { grid-row: 2; grid-column: 1; }     
+  div.banana { grid-row: 3; grid-column: 1; }  
+  div.plum { grid-row: 4; grid-column: 1; }        
+      
+   */ }
+  footer p {
+    color: #000000;
+    padding: 2rem 0;
+    font-size: .9rem;
+    text-align: center; }
+    footer p p a {
+      color: #000000; }
+
+/* ------------------------Clearfix: Force an Element not to collapse----------------------------- */
+.clearfix:after {
+  content: "";
+  display: table; }
+
+@media only screen and (min-width: 560px) {
+  /* ------------------------HEADER----------------------------- */
+  /*-------------------- MAIN ------------------------------ */
+  /*----------------Column Layout -------------*/
+  /*----------------FOOTER--------------------
+  
+  
+  footer {
+      grid-template-columns: 1fr 1fr;
+      
+    
+      
+   p {
+       text-align: center;   
+       grid-column: 1 / span 2;  
+      }
+           
+      
+      
+     
+  div.apple { grid-row: 1; grid-column: 1; align-self: start; } 
+  div.pear { grid-row: 1; grid-column: 2;}     
+  div.banana { grid-row: 2; grid-column: 1; }  
+  div.plum { grid-row: 2; grid-column: 2; }        
+      
+   
+      
+  }    
+  
+  
+  
+  div#wrapperFooter {
+      clear: both; 
+      background-color: $primaryColor;
+  }
+  
+  
+  
+  
+  
+      
+  ----------------END FOOTER--------------------*/ }
+/* end media query */
+@media only screen and (min-width: 1024px) and (max-width: 1024px) {
+  /* -----------------------BODY ------------------------------- */
+  /*-------------------- HEADER ------------------------------ */
+  /*-------------------- MAIN ------------------------------ */
+  /*  
+  grid-template-columns: 1fr 1fr 1fr 1fr; 
+      
+      
+  div.lead { grid-row: 1 / span 2; grid-column: 1 / span 2;} 
+  div.secondTop { grid-row: 1; grid-column: 3 / span 2;}      
+  div.secondBot { grid-row: 2; grid-column: 3 / span 2;}  
+      
+        
+   */
+  /*----------------Column Layout -------------*/
+  /*-------------------- FOOTER ------------------------------ */
+  /*
+  footer { 
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      
+      
+      p {
+       text-align: center;   
+       grid-column: 2 / span 2;  
+      }
+       
+      
+      
+     
+  div.apple { grid-row: 1; grid-column: 1; align-self: start; } 
+  div.pear { grid-row: 1; grid-column: 2; }     
+  div.banana { grid-row: 1; grid-column: 3; }  
+  div.plum { grid-row: 1; grid-column: 4; }        
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+  }*/
+  /*
+  
+  div#wrapperFooter {
+      clear: both; 
+      background-color: $thirdColor;
+  }
+  
+  
+  */ }
+/* end media query */
